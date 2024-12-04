@@ -14,23 +14,24 @@ header {
     font: var(--text-lg);
     list-style: none;
 
+    & .profile {
+      width: 2.5rem;
+      height: 2.5rem;
+    
+      object-fit: cover;
+    
+      border-radius: 50%;
+    }
+
     & a {
       display: flex;
       align-items: center;
     }
   }
-
-  & .profile {
-    width: 2.5rem;
-    height: 2.5rem;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-  }
 }
 
-@media (width >= 80rem) {
+
+@media (width >= 38.75rem) {
   :root {
     --paddingX: 2rem;
     --paddingY: 1.25rem;
