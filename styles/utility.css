@@ -1,0 +1,19 @@
+.container {
+  max-width: 22.5rem;
+  width: cal(100% - var(--paddingX) * 2);
+  margin-inline: auto;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 38.75rem) {
+  .container {
+    max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+}

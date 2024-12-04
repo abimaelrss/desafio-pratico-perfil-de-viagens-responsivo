@@ -15,7 +15,23 @@
   --text-color-secondary: #6c6c6c;
 
   --font-family: "Poppins";
-  --text-heading: 900 2rem/1.25 var(--font-family);
+  --text-heading: 700 2rem/1.25 var(--font-family);
+  --text-lg: 400 1rem/1.5 var(--font-family);
   --text-md: 400 0.875rem/1.7 var(--font-family);
   --text-sm: 400 0.75rem/1.7 var(--font-family);
+
+  --paddingX: 1rem;
+  --paddingY: 1rem;
+
+  /* zoom: .5; */
+}
+
+body {
+  font: var(--text-md);
+  color: var(--text-color-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-secondary);
 }

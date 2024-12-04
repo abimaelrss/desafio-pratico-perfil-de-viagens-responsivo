@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: var(--paddingY) var(--paddingX);
+
+  & ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    font: var(--text-lg);
+    list-style: none;
+
+    & a {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  & .profile {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+  }
+}
+
+@media (width >= 80rem) {
+  :root {
+    --paddingX: 2rem;
+    --paddingY: 1.25rem;
+  }
+}
