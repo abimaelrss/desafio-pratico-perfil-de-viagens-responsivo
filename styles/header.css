@@ -14,22 +14,45 @@ header {
     font: var(--text-lg);
     list-style: none;
 
-    & .profile {
-      width: 2.5rem;
-      height: 2.5rem;
-    
-      object-fit: cover;
-    
-      border-radius: 50%;
+    & .explorer {
+      display: flex;
+      gap: 0.5rem;
+
+      &:hover {
+        cursor: pointer;
+
+        & a {
+          color: var(--brand-color);
+          border-bottom: 1px solid;
+        }
+        
+        & svg path {
+          fill: var(--brand-color);
+        }
+      }
     }
 
     & a {
       display: flex;
       align-items: center;
+      /* margin-bottom: 0; */
+
+      &:hover {
+        color: var(--brand-color);
+        border-bottom: 1px solid;
+      }
+    }
+
+    & .profile {
+      width: 2.5rem;
+      height: 2.5rem;
+
+      object-fit: cover;
+
+      border-radius: 50%;
     }
   }
 }
-
 
 @media (width >= 38.75rem) {
   :root {
